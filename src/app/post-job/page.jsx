@@ -304,8 +304,8 @@ export default function PostJobPage() {
                         <SelectGroup>
                           {companies.map((com) => (
                             <SelectItem
-                              key={com._id}
-                              value={com._id}
+                              key={com?._id}
+                              value={com?._id}
                               className="hover:bg-white/5 focus:bg-white/10"
                             >
                               {com.name}

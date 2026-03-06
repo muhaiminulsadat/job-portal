@@ -28,7 +28,7 @@ const HiringStatus = ({job, fadeUp, onSuccess, user}) => {
     setStatus(value); // ✅ optimistic update
 
     setLoading(true);
-    const res = await updateJobStatus(job._id, value === "true", user?.id);
+    const res = await updateJobStatus(job?._id, value === "true", user?.id);
     setLoading(false);
     onSuccess();
 

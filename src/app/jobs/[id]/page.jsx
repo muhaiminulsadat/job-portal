@@ -11,7 +11,7 @@ const page = async ({params}) => {
   console.log("Data: ", data);
   const {user} = await getCurrentUser();
 
-  const {hasApplied} = await checkIfApplied(user?.id, data._id);
+  const {hasApplied} = await checkIfApplied(user?.id, data?._id);
 
   return (
     <>

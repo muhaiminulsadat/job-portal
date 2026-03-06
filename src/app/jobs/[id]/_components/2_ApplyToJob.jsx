@@ -48,7 +48,7 @@ const ApplyToJob = ({job, fadeUp}) => {
 
   useEffect(() => {
     const func = async () => {
-      const res = await checkIfApplied(user?.id, job._id);
+      const res = await checkIfApplied(user?.id, job?._id);
       if (res?.hasApplied) {
         setHasApplied(true);
       }
@@ -76,7 +76,7 @@ const ApplyToJob = ({job, fadeUp}) => {
 
   const handleSubmit = async () => {
     const values = {
-      jobId: job._id,
+      jobId: job?._id,
       candidateId: user.id,
       ...formData,
     };

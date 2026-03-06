@@ -52,7 +52,7 @@ const ApplicationList = ({applications = [], recruiterId, userId}) => {
         <div className="flex flex-col gap-3">
           {applications.map((application, index) => (
             <ApplicationCard
-              key={application._id}
+              key={application?._id}
               application={application}
               index={index}
               fadeUp={fadeUp}

@@ -113,7 +113,7 @@ export default function JobCard({job, user}) {
         </CardContent>
 
         <CardFooter className="pt-0 border-t border-white/6">
-          <Link href={`/jobs/${job.jobId?._id}`} className="w-full mt-1">
+          <Link href={`/jobs/${job?._id}`} className="w-full mt-1">
             <Button
               variant="default"
               size="sm"

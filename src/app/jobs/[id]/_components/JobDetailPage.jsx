@@ -206,7 +206,7 @@ export default function JobDetailPage({job, hasApplied, user}) {
         <Separator className="bg-white/8" />
 
         {/* ── Apply Button ── */}
-        {user?.id !== job.recruiterId && (
+        {user?.id !== job?.recruiterId && (
           <ApplyToJob fadeUp={fadeUp} job={job} hasApplied={hasApplied} />
         )}
       </div>
