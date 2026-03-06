@@ -84,7 +84,7 @@ export default function JobCard({job, user}) {
 
           {/* Title */}
           <h3 className="text-white font-semibold text-base leading-snug mt-2">
-            {job?.companyId?.title}
+            {job?.title}
           </h3>
 
           {/* Location + status */}
