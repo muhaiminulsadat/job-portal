@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 
 const navLinks = [
   {label: "Find Jobs", href: "/jobs"},
-  {label: "Companies", href: "/companies"},
+  {label: "My Saved Jobs", href: "/saved-jobs"},
   {label: "Post a Job", href: "/post-job"},
 ];
 
